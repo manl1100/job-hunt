@@ -6,4 +6,9 @@ angular.module('codeCareerHunt2App')
       url: '/',
       template: '<main></main>'
     });
+
+    $stateProvider.state('apps', {
+      url: '/apps',
+      template: '<jobapps></jobapps>'
+    });
   });
