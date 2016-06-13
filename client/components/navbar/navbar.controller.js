@@ -1,6 +1,17 @@
 'use strict';
 
-class NavbarController {}
+class NavbarController {
+
+  constructor() {
+      this.menu = [
+        {
+          title: 'Apps',
+          state: 'apps'
+        }
+      ];
+  }
+
+}
 
 //end-non-standard
 

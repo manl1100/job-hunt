@@ -44,8 +44,8 @@
 
   angular.module('codeCareerHunt2App')
     .component('jobapps', {
-      templateUrl: 'app/main/jobapp.html'
+      templateUrl: 'app/main/jobapp.html',
       controller: MainController
     });
-    
+
 })();
