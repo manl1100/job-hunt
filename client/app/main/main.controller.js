@@ -23,11 +23,13 @@
     }
 
     addThing() {
-      if (this.newThing) {
+      if (this.company && this.position) {
         this.$http.post('/api/things', {
-          name: this.newThing
+          company: this.company,
+          position: this.position
         });
-        this.newThing = '';
+        this.company = '';
+        this.position = '';
       }
     }
 
