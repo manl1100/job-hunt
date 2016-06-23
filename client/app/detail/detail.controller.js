@@ -8,6 +8,8 @@
        this.$http = $http;
        this.socket = socket;
        this.awesomeThings = [];
+       this.company = "Google";
+       this.position = "Software Engineer";
 
     }
 
