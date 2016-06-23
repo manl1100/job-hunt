@@ -7,6 +7,9 @@ class NavbarController {
         {
           title: 'Apps',
           state: 'apps'
+        },{
+          title: 'Detail',
+          state: 'detail'
         }
       ];
   }
