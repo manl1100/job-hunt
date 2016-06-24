@@ -12,23 +12,30 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-4">
-      <div class="form-group">
-        <label for="question">Question</label>
-        <textarea type="text" class="form-control" rows="5" ng-model="$ctrl.question" placeholder="Question"></textarea>
+  <div ng-repeat="entry in $ctrl.entries">
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="question">Question</label>
+          <textarea type="text" class="form-control" rows="5" ng-model="$ctrl.question"
+                    placeholder="Question"></textarea>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-4">
-      <div class="form-group">
-        <label for="retrospective">Retrospective</label>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="retrospective">Retrospective</label>
         <textarea type="text" class="form-control" rows="5" ng-model="$ctrl.retrospective"
                   placeholder="Retrospective"></textarea>
+        </div>
       </div>
     </div>
+
   </div>
+
+  <button type="button" class="btn btn-primary" ng-click="$ctrl.addEntry()">Add Question</button>
 
 </div>

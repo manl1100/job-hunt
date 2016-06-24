@@ -10,7 +10,17 @@
        this.awesomeThings = [];
        this.company = "Google";
        this.position = "Software Engineer";
+       this.entries = [{
+        question: "",
+        retrospective: ""
+       }];
+    }
 
+    addEntry() {
+      this.entries.push({
+        question: "",
+        retrospective: ""
+      });
     }
 
   }
